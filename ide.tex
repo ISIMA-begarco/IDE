@@ -94,35 +94,103 @@ Un environnement de développement comporte en général tous les outils nécess
 \item la zone centrale étant composé de l'indispensable éditeur de texte pour taper le code associé à un explorateur de fichiers
 \item la console de sortie au bas de l'écran regroupe les différents résultats des opérations effectuées et les classe par catégories : recherche, debugger, compilateur …
 \end{itemize}
+
+[Voir la Figure \ref{cb01}]
+
 Nous allons maintenant voir les différentes étapes pour concevoir un programme sous Code::Blocks.
 
 \subsection{La création d'un projet}
-Code::Blocks est aussi un bon gestionnaire de projets, il va pouvoir créer les bases de votre projet en quelques clics seulement et vous proposera un code initial prêt à la compilation. Vous avez la possibilité de créer votre propre modèle de projet mais si l'envie vous manque vous pourrez tout à fait choisir un modèle parmi les nombreux proposés allant de la simple application console jusqu'au projet QT, en passant par le SDL ou encore Matlab Project. Ensuite, il vous demandera de donner un nom au projet et une localisation. Après une vérification de l'emplacement des librairies, vous aurez le choix entre pas moins de 20 compilateur, GCC étant l'option par défaut. Enfin il vous sera demandé si le debugger, par défaut GDB, doit être intégré au projet mais nous y reviendront plus tard. Avant de commencer à programmer (et même après) vous avez la possibilité d'activer l'autoversioning et même de commencer une liste de " TODO " afin de partager le travail avec vos éventuels collaborateurs. Voilà vous êtes maintenant prêt à saisir votre code.
+Code::Blocks est aussi un bon gestionnaire de projets, il va pouvoir créer les bases de votre projet en quelques clics seulement et vous proposera un code initial prêt à la compilation. Vous avez la possibilité de créer votre propre modèle de projet mais si l'envie vous manque vous pourrez tout à fait choisir un modèle parmi les nombreux proposés allant de la simple application console jusqu'au projet QT, en passant par le SDL ou encore Matlab Project. Ensuite, il vous demandera de donner un nom au projet et une localisation. Après une vérification de l'emplacement des librairies, vous aurez le choix entre pas moins de 20 compilateur, GCC étant l'option par défaut. Enfin il vous sera demandé si le debugger, par défaut GDB, doit être intégré au projet mais nous y reviendront plus tard. 
+
+[Voir la Figure \ref{cb02}]
+
+Avant de commencer à programmer (et même après) vous avez la possibilité d'activer l'autoversioning et même de commencer une liste de " TODO " afin de partager le travail avec vos éventuels collaborateurs. Voilà vous êtes maintenant prêt à saisir votre code.
+
+[Voir la Figure \ref{cb03}]
+
+
 
 \subsection{La programmation}
 Vous entrez alors dans une phase d'écriture longue et laborieuse, heureusement Code::Blocks est là pour vous aider. Concentrons nous d'abord sur l'éditeur de texte. De prime abord on constate qu'il possède bien la " coloration syntaxique " qui permet de mettre en couleur les mots-clés de votre langage de programmation ainsi que les éléments de ponctuation, utile pour éviter les fautes de frappe et la relecture. Le second élément flagrant est la " volonté " de Code::Blocks à vous faire coder proprement : en effet il possède un système d'indentation automatique qui formatera votre code lisiblement. Ces deux premiers éléments sont tous deux paramétrables dans les menus déroulants. Ensuite l'éditeur possède un système de complètement : après la saisie des trois premières lettres d'un mot, un menu déroulant apparaîtra dans lequel se trouveront toutes les possibilités de saisies, libre à vous de choisir la bonne et de taper " Entrée ". Ceci fonctionne aussi pour la ponctuation et la création de blocs : lors de la saisie d'une parenthèse, crochet, accolade ou guillemet ouvrant son homologue fermant est aussi inséré, évitant bon nombre d'oublis. Le dernier aspect notable de cet éditeur est la possibilité de replier des blocs de code telle une arborescence de fichiers.
 
-	Ensuite Code::Blocks vous offre une vue globale de tous les éléments de votre projet. Il permet d'ajouter, de supprimer et de parcourir aisément tous les fichiers au travers de l'explorateur. Un simple clic droit sur un identifiant permet l'apparition d'un riche menu contextuel avec, entre autre, la possibilité de rechercher la déclaration, l'implémentation, les occurrences, les appelés ou encore les appelant d'une fonction ou d'une simple variable. Le menu déroulant " Search " contient des outils utiles de recherche mais aussi un outil " Replace in files... " très utile pour remplacer toutes les occurrences d'une chaîne de caractères par une autre. Côté programmation objet, Code::Blocks n'est pas en reste puisqu'il possède un outil de création de classe très complet (" File > New > Class... "). Enfin on peut remarquer la présence du plug-in DoxyBlocks qui permet une génération de documentation simplifiée.
+[Voir la Figure \ref{cb04}]
+
+	Ensuite Code::Blocks vous offre une vue globale de tous les éléments de votre projet. Il permet d'ajouter, de supprimer et de parcourir aisément tous les fichiers au travers de l'explorateur. Un simple clic droit sur un identifiant permet l'apparition d'un riche menu contextuel avec, entre autre, la possibilité de rechercher la déclaration, l'implémentation, les occurrences, les appelés ou encore les appelant d'une fonction ou d'une simple variable. Le menu déroulant " Search " contient des outils utiles de recherche mais aussi un outil " Replace in files... " très utile pour remplacer toutes les occurrences d'une chaîne de caractères par une autre. Côté programmation objet, Code::Blocks n'est pas en reste puisqu'il possède un outil de création de classe très complet (" File , New , Class... "). Enfin on peut remarquer la présence du plug-in DoxyBlocks qui permet une génération de documentation simplifiée.
+
+
+[Voir la Figure \ref{cb05}]
+
 
 	Avec tout la programmation est simplifiée il est maintenant temps de terminer le projet en le compilant … Enfin s'il n'y a pas d'erreurs.
 
 \subsection{La compilation}
 Côté compilation, les options sont vastes que ce soit au niveau du choix du compilateur ou encore de celui des options, tout est possible. Vous aurez la possibilité d'ajouter une option manquante le cas échéant. Vous aurez aussi la possibilité de personnaliser votre propre Makefile. En tout cas la compilation de votre projet sera très instinctif, elle ce fait effectivement grâce, entre autre, aux boutons que l'on remarque dès la première ouverture de Code::Blocks. Le " rouage " permet de compiler, la " flèche verte " d'exécuter, la somme des deux de faire les deux et les flèches bleues de reconstruire tout le projet. Le résultat de la compilation apparaît alors dans la console de sortie. Si tout est correct vous obtiendrez un message du genre dans " Build log " :
-\\" Process terminated with status 0 (0 minutes, 12 seconds) \newline
+\begin{center}" Process terminated with status 0 (0 minutes, 12 seconds) \newline
 0 errors, 0 warnings (0 minutes, 12 seconds) "
+\end{center}
+
+[Voir la Figure \ref{cb06}]
+
 
 Sinon il faudra recourir au debugger, qui ne sera autre que GDB. Pour ceci il suffit de cliquer sur la " flèche rouge " pour lancer le debuggage. À la rencontre d'une erreur, la ligne concernée vous est indiquée, vous pouvez demander la pile d'appel, l'état des variables, etc. Vous avez aussi la possibilité de placer des breakpoints par un simple clique dans la marge. Les icônes à côté de la " flèche rouge " permettent l’exécution ligne par ligne, bloc par bloc, jusqu'à la ligne courante, etc. Bref, toutes les fonctionnalités d'un debugger sont présentes.
 
+[Voir la Figure \ref{cb07}]
+
+
 \end{onehalfspacing}
 
-\newpage \section*{\underline{Conclusion}} \addcontentsline{toc}{section}{Conclusion} 
+
+
+\clearpage \section*{\underline{Conclusion}} \addcontentsline{toc}{section}{Conclusion} 
 
 \begin{doublespace}
 BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA.
 
 \newpage \def\refname{Bibliographie} \bibliographystyle{plain} \bibliography{biblio} \addcontentsline{toc}{section}{Bibliographie} 
 
+\clearpage \listoffigures \addcontentsline{toc}{section}{Table des figures} 
+\clearpage
+\begin{figure}
+\includegraphics[scale=0.3]{./images/cb01.png}
+\caption{Code::Blocks}				
+\label{cb01}				
+\end{figure}
 
+\begin{figure}
+\includegraphics[scale=0.35]{./images/cb02.png}
+\caption{Configuration du nouveau projet}				
+\label{cb02}				
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.35]{./images/cb03.png}
+\caption{Code par défaut clé en main}				
+\label{cb03}				
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.55]{./images/cb04.png}
+\caption{Fonctionnalités intéressantes de l'éditeur de texte}				
+\label{cb04}				
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.45]{./images/cb05.png}
+\caption{Quelques outils pratiques}				
+\label{cb05}				
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.6]{./images/cb06.png}
+\caption{La compilation}				
+\label{cb06}				
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{./images/cb07.png}
+\caption{Le débuggage}				
+\label{cb07}				
+\end{figure}
 \end{doublespace}
 
 

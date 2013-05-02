@@ -8,3 +8,4 @@
 \contentsline {subsection}{\numberline {2.4}La compilation}{6}
 \contentsline {section}{Conclusion}{7}
 \contentsline {section}{Bibliographie}{8}
+\contentsline {section}{Table des figures}{9}
