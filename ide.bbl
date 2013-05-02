@@ -1,0 +1,38 @@
+\begin{thebibliography}{}
+\bibitem{WikiIDE}
+          Wikinautes,
+          \emph{Integrated development environment}.
+          Avril,
+          2013,
+	  \\$http://en.wikipedia.org/wiki/Integrated_development_environment$.
+\bibitem{WikiCB}
+          Wikinautes,
+          \emph{Code::Blocks}.
+          Avril,
+          2013,
+	  http://fr.wikipedia.org/wiki/Code::Blocks.
+\bibitem{developpezCB}
+          Wikinautes,
+          \emph{Test de l'EDI C/C++ Code::Blocks}.
+          Septembre,
+          2005,
+	  \\$http://loulou.developpez.com/tutoriels/cpp/codeblocks/$.
+\bibitem{enstaCB}
+          E. Luneville,
+          \emph{Tutoriel Code::Blocks}.
+          2006,
+	  \\$http://www.ensta-paristech.fr/~lunevill/sim_numerique/cours/intro_codeblocks.pdf$.
+\bibitem{zeroCB}
+          Nanoc et Mateo21,
+          \emph{Code::Blocks (Windows, Mac OS, Linux)}.
+          Avril,
+          2013,
+	  \\$http://www.siteduzero.com/informatique/tutoriels/programmez-avec-le-langage-c/code-blocks-windows-mac-os-linux-1$.
+\bibitem{manuelCB}
+          Anders F. Bjorklund and al.,
+          \emph{Code::Blocks : Manuel Utilisateur}.
+          Mai,
+	  2010,
+	  Code::Blocks.
+
+\end{thebibliography}
