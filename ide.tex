@@ -5,10 +5,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[top=3cm, bottom=4cm, left=3cm, right=3cm]{geometry}
 \usepackage{setspace}
+\usepackage[pdftex]{graphicx}
 
-\title{\underline{\textbf{IDE : Integrated Development Environment}}} 
-\author{Benoît GARCON, Loïck CHIRON, Marie CASSAING} 
-\date{11/04/2013}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
 
 \begin{document}
 
@@ -16,17 +16,53 @@
 \definecolor{blanc}{RGB}{255,255,255} 
 \pagecolor{bleuciel}
 
-\maketitle \vspace {4cm} \thispagestyle{empty}
 
-\setcounter{page}{0}
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.15\textwidth]{./logo.png}~\\[1cm]
 
-\newpage \renewcommand{\contentsname}{Sommaire} \tableofcontents
+\textsc{\LARGE Prep'ISIMA}\\[1.5cm]
+
+\textsc{\Large Rapport de Génie Logiciel}\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries IDE : Integrated Development Environment}\\[0.4cm]
+
+\HRule \\[1.5cm]
+
+% Autheur and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Auteurs :}\\
+Benoît \textsc{Garçon}\\
+Loïck \textsc{Chiron}\\
+Marie \textsc{Cassaing}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Enseignant :} \\
+Jonathan \textsc{Passerat-Palmbach}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+\setcounter{page}{1}
+
+\newpage \renewcommand{\contentsname}{Sommaire}  \tableofcontents
 \pagecolor{blanc}
 
 \newpage \section*{\underline{Introduction}} \addcontentsline{toc}{section}{Introduction}
 
 \begin{doublespace}
-
 
 	Il existe aujourd'hui une multitude de façons de produire du code et par extension un programme. Elles sont plus ou moins conseillées selon le support, le langage de programmation et surtout l'utilisateur. De façon générale, tout ce qui nous est proposé reflète une qualité certaine et un avantage non négligeable pour le programmeur si toutefois les bonnes pratiques de programmation sont respectées.
 
@@ -41,39 +77,54 @@
 
 \begin{doublespace}
 Un environnement de développement comporte en général tous les outils nécessaires pour analyser, écrire et debugger votre programme. On retrouvera donc dans tous les IDE, un éditeur de texte incorporé comportant une syntaxe typique de mise en valeur de votre code par l'intermédiaire d'une indentation automatique, de mise en couleur des mots clés et d'une complétion automatique de ces mots clés. Il y aura également dans la plupart des cas un débuggeur et un compilateur de manière à pouvoir rédiger, corriger et tester votre programme avec un seul logiciel. De manière générale, le processus de débogage commence pendant la génération. La génération de votre programme  aide à détecter les erreurs de compilation et vous affiche les numéros de lignes correspondants. Les erreurs les plus fréquentes étant dues à une syntaxe incorrecte, à des mots clés mal orthographiés ou à une incompatibilité de type.  Enfin, un IDE est également très souvent muni d’un système de gestion de projet très pratique lorsque l’on va réaliser un programme de manière collaboratif en sein d’une entreprise par exemple. Cela regroupe donc  l’interconnexion des données, dossiers et fichiers nécessaire à la réalisation du projet.
+
 \end{doublespace}
 
 \newpage \section{\underline{CodeBlocks : un exemple d'application}}
 
-\begin{doublespace}
-\subsection{\underline{Un premier aperçu}} 
-	Nous avons choisis ici de vous présenter un IDE particulier puisqu'il est connu par la majorité des membres du groupe : il s'agit Code::Blocks qui fait parti des IDE les plus répandus pour les langages C et C++. Voici donc un outil privilégié pour les développeurs en herbe et peut-être même les plus confirmés. Les raisons d'un tel succès sont assez simple :
-
-- libre et " open source " : c'est un logiciel gratuit donc accessible à tous mais aussi perfectible par tous
-
-- multiplateforme : que l'on développe sous Linux, Mac OS X ou même Windows il existe une version disponible
-
-- complet : Code::Blocks offre une multitude de fonctionnalités pratiques que l'on peut attendre d'un bon IDE, mais s'il manque un outil il y aura certainement un plug-in pour pallier ce défaut.
-
-	L'aventure Code::Blocks commença en 2005, il a été développé en C++ grâce à la bibliothèque wxWidgets, ce qui explique pourquoi il est si simple d'améliorer cet IDE. Code::Blocks est un logiciel assez intuitif et simple d'utilisation (mais il reste toutefois très complet). Bien qu'utilisable en ligne de commande, il arbore aussi une interface graphique très classique. On retrouve en haut de la fenêtre les différents menus et boutons donnant accès à toutes les fonctionnalités.  Le reste est divisé en deux zones : 
-
-la zone centrale étant composé de l'indispensable éditeur de texte pour taper le code associé à un explorateur de fichiers
-
-la console de sortie au bas de l'écran regroupe les différents résultats des opérations effectuées et les classe par catégories : recherche, debugger, compilateur …
-
+\begin{onehalfspacing}
+\subsection{Un premier aperçu} 
+	Nous avons choisis ici de vous présenter un IDE particulier puisqu'il est connu par la majorité des membres du groupe : il s'agit Code::Blocks qui fait parti des IDE les plus répandus pour les langages C et C++ (aussi utile pour le Fortran et le D). Voici donc un outil privilégié pour les développeurs en herbe et peut-être même les plus confirmés. Les raisons d'un tel succès sont assez simple :
+\begin{itemize}
+\item libre et " open source " : c'est un logiciel gratuit donc accessible à tous mais aussi perfectible par tous
+\item multiplateforme : que l'on développe sous Linux, Mac OS X ou même Windows il existe une version disponible
+\item complet : Code::Blocks offre une multitude de fonctionnalités pratiques que l'on peut attendre d'un bon IDE, mais s'il manque un outil il y aura certainement un plug-in pour pallier ce défaut.
+\end{itemize}
+	L'aventure Code::Blocks commença en 2005, il a été développé en C++ grâce à la bibliothèque wxWidgets, ce qui explique pourquoi il est si simple d'améliorer cet IDE. Code::Blocks est un logiciel assez intuitif et simple d'utilisation (mais il reste toutefois très complet). Bien qu'utilisable en ligne de commande, il arbore aussi une interface graphique très classique. On retrouve en haut de la fenêtre les différents menus et boutons donnant accès à toutes les fonctionnalités.  Le reste est divisé en deux zones : \begin{itemize}
+\item la zone centrale étant composé de l'indispensable éditeur de texte pour taper le code associé à un explorateur de fichiers
+\item la console de sortie au bas de l'écran regroupe les différents résultats des opérations effectuées et les classe par catégories : recherche, debugger, compilateur …
+\end{itemize}
 Nous allons maintenant voir les différentes étapes pour concevoir un programme sous Code::Blocks.
 
-\subsection{\underline{La création d'un projet}} 
+\subsection{La création d'un projet}
+Code::Blocks est aussi un bon gestionnaire de projets, il va pouvoir créer les bases de votre projet en quelques clics seulement et vous proposera un code initial prêt à la compilation. Vous avez la possibilité de créer votre propre modèle de projet mais si l'envie vous manque vous pourrez tout à fait choisir un modèle parmi les nombreux proposés allant de la simple application console jusqu'au projet QT, en passant par le SDL ou encore Matlab Project. Ensuite, il vous demandera de donner un nom au projet et une localisation. Après une vérification de l'emplacement des librairies, vous aurez le choix entre pas moins de 20 compilateur, GCC étant l'option par défaut. Enfin il vous sera demandé si le debugger, par défaut GDB, doit être intégré au projet mais nous y reviendront plus tard. Avant de commencer à programmer (et même après) vous avez la possibilité d'activer l'autoversioning et même de commencer une liste de " TODO " afin de partager le travail avec vos éventuels collaborateurs. Voilà vous êtes maintenant prêt à saisir votre code.
 
-\subsection{\underline{La programmation}} 
+\subsection{La programmation}
+Vous entrez alors dans une phase d'écriture longue et laborieuse, heureusement Code::Blocks est là pour vous aider. Concentrons nous d'abord sur l'éditeur de texte. De prime abord on constate qu'il possède bien la " coloration syntaxique " qui permet de mettre en couleur les mots-clés de votre langage de programmation ainsi que les éléments de ponctuation, utile pour éviter les fautes de frappe et la relecture. Le second élément flagrant est la " volonté " de Code::Blocks à vous faire coder proprement : en effet il possède un système d'indentation automatique qui formatera votre code lisiblement. Ces deux premiers éléments sont tous deux paramétrables dans les menus déroulants. Ensuite l'éditeur possède un système de complètement : après la saisie des trois premières lettres d'un mot, un menu déroulant apparaîtra dans lequel se trouveront toutes les possibilités de saisies, libre à vous de choisir la bonne et de taper " Entrée ". Ceci fonctionne aussi pour la ponctuation et la création de blocs : lors de la saisie d'une parenthèse, crochet, accolade ou guillemet ouvrant son homologue fermant est aussi inséré, évitant bon nombre d'oublis. Le dernier aspect notable de cet éditeur est la possibilité de replier des blocs de code telle une arborescence de fichiers.
 
-\subsection{\underline{La compilation}} 
-\end{doublespace}
+	Ensuite Code::Blocks vous offre une vue globale de tous les éléments de votre projet. Il permet d'ajouter, de supprimer et de parcourir aisément tous les fichiers au travers de l'explorateur. Un simple clic droit sur un identifiant permet l'apparition d'un riche menu contextuel avec, entre autre, la possibilité de rechercher la déclaration, l'implémentation, les occurrences, les appelés ou encore les appelant d'une fonction ou d'une simple variable. Le menu déroulant " Search " contient des outils utiles de recherche mais aussi un outil " Replace in files... " très utile pour remplacer toutes les occurrences d'une chaîne de caractères par une autre. Côté programmation objet, Code::Blocks n'est pas en reste puisqu'il possède un outil de création de classe très complet (" File > New > Class... "). Enfin on peut remarquer la présence du plug-in DoxyBlocks qui permet une génération de documentation simplifiée.
+
+	Avec tout la programmation est simplifiée il est maintenant temps de terminer le projet en le compilant … Enfin s'il n'y a pas d'erreurs.
+
+\subsection{La compilation}
+Côté compilation, les options sont vastes que ce soit au niveau du choix du compilateur ou encore de celui des options, tout est possible. Vous aurez la possibilité d'ajouter une option manquante le cas échéant. Vous aurez aussi la possibilité de personnaliser votre propre Makefile. En tout cas la compilation de votre projet sera très instinctif, elle ce fait effectivement grâce, entre autre, aux boutons que l'on remarque dès la première ouverture de Code::Blocks. Le " rouage " permet de compiler, la " flèche verte " d'exécuter, la somme des deux de faire les deux et les flèches bleues de reconstruire tout le projet. Le résultat de la compilation apparaît alors dans la console de sortie. Si tout est correct vous obtiendrez un message du genre dans " Build log " :
+\\" Process terminated with status 0 (0 minutes, 12 seconds) \newline
+0 errors, 0 warnings (0 minutes, 12 seconds) "
+
+Sinon il faudra recourir au debugger, qui ne sera autre que GDB. Pour ceci il suffit de cliquer sur la " flèche rouge " pour lancer le debuggage. À la rencontre d'une erreur, la ligne concernée vous est indiquée, vous pouvez demander la pile d'appel, l'état des variables, etc. Vous avez aussi la possibilité de placer des breakpoints par un simple clique dans la marge. Les icônes à côté de la " flèche rouge " permettent l’exécution ligne par ligne, bloc par bloc, jusqu'à la ligne courante, etc. Bref, toutes les fonctionnalités d'un debugger sont présentes.
+
+\end{onehalfspacing}
 
 \newpage \section*{\underline{Conclusion}} \addcontentsline{toc}{section}{Conclusion} 
 
 \begin{doublespace}
-BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA.
+BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA.
+
+\newpage \def\refname{Bibliographie} \bibliographystyle{plain} \bibliography{biblio} \addcontentsline{toc}{section}{Bibliographie} 
+
+
 \end{doublespace}
+
+
 
 \end{document}
