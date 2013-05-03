@@ -3,7 +3,7 @@
 \beamer@sectionintoc {1}{Qu'est-ce qu'un IDE ?}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Historique}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Les fonctionnalit\IeC {\'e}s}{5}{0}{1}
-\beamer@sectionintoc {2}{Code::Blocks : un IDE pour vous}{11}{0}{2}
-\beamer@subsectionintoc {2}{1}{Cr\IeC {\'e}ation d'un projet assist\IeC {\'e}}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Programmation sous Code::Blocks}{14}{0}{2}
-\beamer@subsectionintoc {2}{3}{Finalisation du programme avec Code::Blocks}{16}{0}{2}
+\beamer@sectionintoc {2}{Code::Blocks : un IDE pour vous}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Cr\IeC {\'e}ation d'un projet assist\IeC {\'e}}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Programmation sous Code::Blocks}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Finalisation du programme avec Code::Blocks}{19}{0}{2}
