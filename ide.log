@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.20)  3 MAY 2013 02:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.20)  3 MAY 2013 12:38
 entering extended mode
 **C:/Users/Ben/Documents/GitHub/IDE/ide.tex
 (C:/Users/Ben/Documents/GitHub/IDE/ide.tex
@@ -446,13 +446,7 @@ Overfull \hbox (63.1463pt too wide) in paragraph at lines 75--75
 []$[]$ 
  []
 
-
-Overfull \hbox (9.97356pt too wide) in paragraph at lines 78--79
-[]\OT1/cmr/m/n/12 Un en-vi-ron-ne-ment de developpement com-porte en general
- tous les ou-tils necessaires
- []
-
-[3] [4] [5] [6] [7
+[3] [4] [5] [6] [7] [8] [9
 
 ] (C:\Users\Ben\Documents\GitHub\IDE\ide.bbl
 Overfull \hbox (20.80263pt too wide) in paragraph at lines 9--14
@@ -467,95 +461,95 @@ $\OML/cmm/m/it/12 http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:ensta \OMS/cmsy
 eblocks:pdf$\OT1/cmr/m/n/12 . 
  []
 
-) [8] (C:\Users\Ben\Documents\GitHub\IDE\ide.lof)
+) [10] (C:\Users\Ben\Documents\GitHub\IDE\ide.lof)
 \tf@lof=\write4
- [9
+ [11
 
 ]
-<./images/cb01.png, id=43, 1445.4pt x 782.925pt>
+<./images/cb01.png, id=49, 1445.4pt x 782.925pt>
 File: ./images/cb01.png Graphic file (type png)
  <use ./images/cb01.png>
-Package pdftex.def Info: ./images/cb01.png used on input line 155.
+Package pdftex.def Info: ./images/cb01.png used on input line 159.
 (pdftex.def)             Requested size: 433.62335pt x 234.8793pt.
 
-Overfull \hbox (6.832pt too wide) in paragraph at lines 155--156
+Overfull \hbox (6.832pt too wide) in paragraph at lines 159--160
 [][] 
  []
 
-<./images/cb02.png, id=44, 1309.89375pt x 671.50874pt>
+<./images/cb02.png, id=50, 1309.89375pt x 671.50874pt>
 File: ./images/cb02.png Graphic file (type png)
  <use ./images/cb02.png>
-Package pdftex.def Info: ./images/cb02.png used on input line 161.
+Package pdftex.def Info: ./images/cb02.png used on input line 165.
 (pdftex.def)             Requested size: 458.4697pt x 235.03159pt.
 
-Overfull \hbox (31.67834pt too wide) in paragraph at lines 161--162
+Overfull \hbox (31.67834pt too wide) in paragraph at lines 165--166
 [][] 
  []
 
-<./images/cb03.png, id=45, 1445.4pt x 781.41937pt>
+<./images/cb03.png, id=51, 1445.4pt x 781.41937pt>
 File: ./images/cb03.png Graphic file (type png)
  <use ./images/cb03.png>
-Package pdftex.def Info: ./images/cb03.png used on input line 167.
+Package pdftex.def Info: ./images/cb03.png used on input line 171.
 (pdftex.def)             Requested size: 505.89758pt x 273.50087pt.
 
-Overfull \hbox (79.10623pt too wide) in paragraph at lines 167--168
+Overfull \hbox (79.10623pt too wide) in paragraph at lines 171--172
 [][] 
  []
 
-<./images/cb04.png, id=46, 870.25125pt x 682.04813pt>
+<./images/cb04.png, id=52, 870.25125pt x 682.04813pt>
 File: ./images/cb04.png Graphic file (type png)
  <use ./images/cb04.png>
-Package pdftex.def Info: ./images/cb04.png used on input line 173.
+Package pdftex.def Info: ./images/cb04.png used on input line 177.
 (pdftex.def)             Requested size: 478.63966pt x 375.12762pt.
 
-Overfull \hbox (51.84831pt too wide) in paragraph at lines 173--174
+Overfull \hbox (51.84831pt too wide) in paragraph at lines 177--178
 [][] 
  []
 
-<./images/cb05.png, id=47, 1127.71312pt x 447.17062pt>
+<./images/cb05.png, id=53, 1127.71312pt x 447.17062pt>
 File: ./images/cb05.png Graphic file (type png)
  <use ./images/cb05.png>
-Package pdftex.def Info: ./images/cb05.png used on input line 179.
+Package pdftex.def Info: ./images/cb05.png used on input line 183.
 (pdftex.def)             Requested size: 507.46622pt x 201.22491pt.
 
-Overfull \hbox (80.67487pt too wide) in paragraph at lines 179--180
+Overfull \hbox (80.67487pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
-<./images/cb06.png, id=48, 794.97pt x 782.925pt>
+<./images/cb06.png, id=54, 794.97pt x 782.925pt>
 File: ./images/cb06.png Graphic file (type png)
  <use ./images/cb06.png>
-Package pdftex.def Info: ./images/cb06.png used on input line 185.
+Package pdftex.def Info: ./images/cb06.png used on input line 189.
 (pdftex.def)             Requested size: 476.98569pt x 469.75862pt.
 
-Overfull \hbox (50.19434pt too wide) in paragraph at lines 185--186
+Overfull \hbox (50.19434pt too wide) in paragraph at lines 189--190
 [][] 
  []
 
-<./images/cb07.png, id=49, 969.6225pt x 784.43062pt>
+<./images/cb07.png, id=55, 969.6225pt x 784.43062pt>
 File: ./images/cb07.png Graphic file (type png)
  <use ./images/cb07.png>
-Package pdftex.def Info: ./images/cb07.png used on input line 191.
+Package pdftex.def Info: ./images/cb07.png used on input line 195.
 (pdftex.def)             Requested size: 484.81006pt x 392.21434pt.
 
-Overfull \hbox (58.0187pt too wide) in paragraph at lines 191--192
+Overfull \hbox (58.0187pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
-[10 <C:/Users/Ben/Documents/GitHub/IDE/images/cb01.png> <C:/Users/Ben/Documents
-/GitHub/IDE/images/cb02.png>] [11 <C:/Users/Ben/Documents/GitHub/IDE/images/cb0
-3.png>] [12 <C:/Users/Ben/Documents/GitHub/IDE/images/cb04.png> <C:/Users/Ben/D
-ocuments/GitHub/IDE/images/cb05.png>] [13 <C:/Users/Ben/Documents/GitHub/IDE/im
-ages/cb06.png>] [14 <C:/Users/Ben/Documents/GitHub/IDE/images/cb07.png>]
+[12 <C:/Users/Ben/Documents/GitHub/IDE/images/cb01.png> <C:/Users/Ben/Documents
+/GitHub/IDE/images/cb02.png>] [13 <C:/Users/Ben/Documents/GitHub/IDE/images/cb0
+3.png>] [14 <C:/Users/Ben/Documents/GitHub/IDE/images/cb04.png> <C:/Users/Ben/D
+ocuments/GitHub/IDE/images/cb05.png>] [15 <C:/Users/Ben/Documents/GitHub/IDE/im
+ages/cb06.png>] [16 <C:/Users/Ben/Documents/GitHub/IDE/images/cb07.png>]
 (C:\Users\Ben\Documents\GitHub\IDE\ide.aux) ) 
 Here is how much of TeX's memory you used:
  2677 strings out of 493921
  35976 string characters out of 3147288
- 102567 words of memory out of 3000000
+ 101567 words of memory out of 3000000
  5935 multiletter control sequences out of 15000+200000
  11013 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 25i,7n,24p,1377b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,7n,24p,1494b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Ben/SkyDrive/Latex/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ben/SkyDrive/Latex/fonts/type1/p
 ublic/amsfonts/cm/cmcsc10.pfb><C:/Users/Ben/SkyDrive/Latex/fonts/type1/public/a
@@ -563,9 +557,9 @@ msfonts/cm/cmmi12.pfb><C:/Users/Ben/SkyDrive/Latex/fonts/type1/public/amsfonts/
 cm/cmmi8.pfb><C:/Users/Ben/SkyDrive/Latex/fonts/type1/public/amsfonts/cm/cmr12.
 pfb><C:/Users/Ben/SkyDrive/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/Ben/SkyDrive/Latex/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ide.pdf (15 pages, 644614 bytes).
+Output written on ide.pdf (17 pages, 647225 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

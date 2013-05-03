@@ -1,11 +1,13 @@
 \select@language {french}
 \contentsline {section}{Introduction}{2}
 \contentsline {section}{\numberline {1}\relax $\@@underline {\hbox {IDE : un \IeC {\'e}ventail de fonctionnalit\IeC {\'e}s en un programme}}\mathsurround \z@ $\relax }{3}
-\contentsline {section}{\numberline {2}\relax $\@@underline {\hbox {CodeBlocks : un exemple d'application}}\mathsurround \z@ $\relax }{4}
-\contentsline {subsection}{\numberline {2.1}Un premier aper\IeC {\c c}u}{4}
-\contentsline {subsection}{\numberline {2.2}La cr\IeC {\'e}ation d'un projet}{4}
-\contentsline {subsection}{\numberline {2.3}La programmation}{5}
-\contentsline {subsection}{\numberline {2.4}La compilation}{6}
-\contentsline {section}{Conclusion}{7}
-\contentsline {section}{Bibliographie}{8}
-\contentsline {section}{Table des figures}{9}
+\contentsline {subsection}{\numberline {1.1}Les fonctionnalit\IeC {\'e}s basiques}{3}
+\contentsline {subsection}{\numberline {1.2}Les fonctionnalit\IeC {\'e}s avanc\IeC {\'e}es}{4}
+\contentsline {section}{\numberline {2}\relax $\@@underline {\hbox {CodeBlocks : un exemple d'application}}\mathsurround \z@ $\relax }{5}
+\contentsline {subsection}{\numberline {2.1}Un premier aper\IeC {\c c}u}{5}
+\contentsline {subsection}{\numberline {2.2}La cr\IeC {\'e}ation d'un projet}{6}
+\contentsline {subsection}{\numberline {2.3}La programmation}{7}
+\contentsline {subsection}{\numberline {2.4}La compilation}{8}
+\contentsline {section}{Conclusion}{9}
+\contentsline {section}{Bibliographie}{10}
+\contentsline {section}{Table des figures}{11}
